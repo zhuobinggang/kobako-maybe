@@ -29,7 +29,11 @@
         /**
          * Get value from Maybe
          */
-        value: maybe => maybe.just_value,
+        value: maybe => {
+            if(maybe.just_value != null)
+              return maybe.just_value
+            throw new Error("Function 'value' accept a Just type")
+        },
 
         /**
          * Construct a Just
