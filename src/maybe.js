@@ -45,14 +45,14 @@
          * Lift a traditional function
          */
         map: (f,maybe) => {
-            return M.isJust(maybe) ? f(M.value(maybe)) : M.nothing()
+            return M.isJust(maybe) ? M.just(f(M.value(maybe))) : M.nothing()
         },
 
         /**
          * Provide a default value when input is Nothing
          */
         or: (maybe,default_value) => {
-            return M.isJust(maybe) ? maybe : default_value
+            return M.isJust(maybe) ? M.value(maybe) : default_value
         }
     }
     return M
