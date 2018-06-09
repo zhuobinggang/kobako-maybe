@@ -1,7 +1,7 @@
 {
   "name": "kobako-maybe",
-  "version": "1.1.0",
-  "description": "",
+  "version": "1.2.0",
+  "description": "Yet another Maybe type written by vanilla.js",
   "main": "src/maybe.js",
   "scripts": {
     "test": "node src/maybe.test.js"

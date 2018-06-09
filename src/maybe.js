@@ -49,7 +49,7 @@
         },
 
         /**
-         * Provide a default value when input is Nothing
+         * Return value of Just or default_value of Nothing
          */
         or: (maybe,default_value) => {
             return M.isJust(maybe) ? M.value(maybe) : default_value
