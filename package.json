@@ -1,0 +1,11 @@
+{
+  "name": "maybe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/maybe.js",
+  "scripts": {
+    "test": "node src/maybe.test.js"
+  },
+  "author": "kobako",
+  "license": "MIT"
+}
