@@ -22,7 +22,7 @@
             return (value == null) ? M.nothing() : M.just(value)
         },
 
-        isJust: maybe => M.value(maybe) != null,
+        isJust: maybe => maybe.just_value != null,
 
         isNothing: maybe => !M.isJust(maybe),
 
@@ -30,7 +30,7 @@
          * Get value from Maybe
          */
         value: maybe => {
-            if(maybe.just_value != null)
+            if(M.isJust(maybe))
               return maybe.just_value
             throw new Error("Function 'value' accept a Just type")
         },
